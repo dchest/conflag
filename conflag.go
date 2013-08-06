@@ -203,7 +203,7 @@ func Var(value flag.Value, name string, usage string) {
 	defaultSet.Var(value, name, usage)
 }
 
-// ConfigFilePath returns configuration file path.
+// UserConfigFilePath returns user configuration file path ($HOME/.progname).
 // If program name is not set, returns an empty string.
 func UserConfigFilePath() string {
 	if progName == "" {
@@ -217,6 +217,8 @@ func UserConfigFilePath() string {
 	return filepath.Join(u.HomeDir, "."+progName)
 }
 
+// GlobalConfigFilePath returns user configuration file path (/etc/progname).
+// If program name is not set, returns an empty string.
 func GlobalConfigFilePath() string {
 	if progName == "" {
 		return ""
