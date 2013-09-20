@@ -17,7 +17,7 @@
 // 	/etc/progname
 //	$HOME/.progname
 //
-// These file is parsed before command-line arguments, so real arguments
+// These files are parsed before command-line arguments, so real arguments
 // override flags from configuration file.
 //
 // 	$ mycmd -play=true
