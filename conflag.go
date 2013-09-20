@@ -2,12 +2,11 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package conflag is simple a wrapper around flag package that fills flag
-// values from configuration files before parsing them from command-line
-// arguments.
+// Package conflag is a simple wrapper around flag package that fills flag
+// values from configuration files before parsing them from command-line.
 //
-// Configuration files contains list of flags in the same format they would
-// appear as command-line arguments, but without the leading dash:
+// Configuration files contain list of flags in the same format they would
+// appear as command line arguments, but without the leading dash:
 //
 // 	http=localhost:8080
 //	play=false
@@ -41,8 +40,7 @@
 //		...
 //	}
 //
-// If your program overwrites Usage variable, call
-// SetUsage() instead.
+// If your program overwrites Usage variable, call SetUsage() instead.
 package conflag
 
 import (

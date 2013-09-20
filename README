@@ -1,2 +1,2 @@
-Package conflag is simple a wrapper around flag package that fills flag values
-from configuration files before parsing them from command-line arguments. 
+Package conflag is a simple wrapper around flag package that fills flag values
+from configuration files before parsing them from command line.
